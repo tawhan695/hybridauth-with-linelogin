@@ -7,7 +7,7 @@ $config = [
     'providers' => [
         'Line' => [ 
             'enabled' => true,
-            'keys'    => [ 'id' => '', 'secret' => '' ], 
+            'keys'    => [ 'id' => '1656778587', 'secret' => 'fee0305d2a4ef51061371e3386a415a2' ], 
         ],
     ],
 ];
@@ -17,9 +17,10 @@ try {
     $tokens = $adapter->getAccessToken();
     $userProfile = $adapter->getUserProfile();
     // print_r( $tokens );
-    print_r( $userProfile );
+    // print_r( $userProfile );
     $adapter->disconnect();
 }
 catch (\Exception $e) {
     echo $e->getMessage();
 }
+?>
